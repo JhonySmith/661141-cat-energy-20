@@ -1,0 +1,10 @@
+.promo__description {
+  @include font-param($font-size: 36px, $line-height: 36px);
+  color: $light-text-color;
+  text-transform: uppercase;
+}
+
+.promo__slogan {
+  @include font-param($line-height: 14px);
+  color: $light-text-color;
+}
