@@ -1,0 +1,28 @@
+.live-example__description {
+  @include font-param($font-family: $Arial);
+}
+
+.live-example__indicators-list {
+  list-style-type: none;
+}
+
+.live-example__indicators-item {
+  @include font-param($font-size: 24px, $line-height: 24px);
+  text-transform: uppercase;
+}
+
+.live-example__indicators-comment {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+}
+
+.live-example__price {
+  @include font-param($line-height: 20px);
+  text-transform: uppercase;
+}
+
+.live-example__before-after {
+  @include font-param($font-size: 16px, $line-height: 20px);
+  text-transform: uppercase;
+}
