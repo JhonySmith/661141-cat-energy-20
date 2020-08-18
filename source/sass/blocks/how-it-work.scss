@@ -1,0 +1,7 @@
+.how-it-work__list {
+  list-style-type: none;
+}
+
+.how-it-work__item {
+  @include font-param($font-family: $Arial);
+}
