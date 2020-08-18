@@ -1,7 +1,11 @@
 .how-it-work__list {
+  padding: 0;
+
   list-style-type: none;
 }
 
 .how-it-work__item {
+  margin-bottom: 20px;
+
   @include font-param($font-family: $Arial);
 }

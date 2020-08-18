@@ -1,5 +1,20 @@
 .programs__list {
+
+
+  padding: 0;
+
   list-style-type: none;
+}
+
+.programs__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-bottom: 20px;
+  padding: 20px;
+
+  background-color: $gray-bg-color;
 }
 
 .programs__title {
@@ -8,6 +23,9 @@
 }
 
 .programs__description {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $line-gray;
+
   @include font-param($font-family: $Arial);
 }
 

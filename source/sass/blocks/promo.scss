@@ -1,5 +1,12 @@
+.promo__wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .promo__description {
   @include font-param($font-size: 36px, $line-height: 36px);
+  text-align: center;
   color: $light-text-color;
   text-transform: uppercase;
 }

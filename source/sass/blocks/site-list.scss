@@ -1,3 +1,8 @@
 .site-list__item {
   @include font-param($font-size: 20px, $line-height: 30px);
 }
+
+.site-list__item a {
+  text-decoration: none;
+  color: black;
+}
