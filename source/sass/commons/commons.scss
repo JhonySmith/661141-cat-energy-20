@@ -13,6 +13,10 @@
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 .section-wraper {
   box-sizing: border-box;
 
@@ -40,4 +44,13 @@
 .page-button--green {
   background-color: $buttons-color-main;
   color: $light-text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .section-wraper {
+  width: 768px;
+
+  padding-right: 30px;
+  padding-left: 30px;
+  }
 }

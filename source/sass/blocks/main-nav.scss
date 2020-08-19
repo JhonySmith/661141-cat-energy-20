@@ -1,5 +1,8 @@
 .main-nav {
-  position: relative;
+  display: none;
+
+  @include font-param($font-size: 20px, $line-height: 20px, $font-weight: 500);
+  text-transform: uppercase;
 }
 
 .main-nav__list {
@@ -8,19 +11,19 @@
   list-style-type: none;
 }
 
-.main-nav__toggle {
-  position: absolute;
-  right: 0;
-  top: -44px;
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+  }
 
-  width: 24px;
-  height: 16px;
+  .main-nav__list {
+  display: flex;
+  justify-content: space-between;
 
-  padding: 0;
+  min-width: 440px;
 
-  border: none;
-
-  background: url("../img/icon-mobile-menu.svg") no-repeat center;
-
-  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  }
 }
