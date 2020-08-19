@@ -1,3 +1,26 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__list {
+  padding: 0;
+
   list-style-type: none;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 0;
+  top: -44px;
+
+  width: 24px;
+  height: 16px;
+
+  padding: 0;
+
+  border: none;
+
+  background: url("../img/icon-mobile-menu.svg") no-repeat center;
+
+  cursor: pointer;
 }
