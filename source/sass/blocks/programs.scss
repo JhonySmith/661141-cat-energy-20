@@ -1,6 +1,5 @@
 .programs__list {
-
-
+  margin-top: 22px;
   padding: 0;
 
   list-style-type: none;
@@ -12,28 +11,99 @@
   align-items: flex-start;
 
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 24px 20px 18px 20px;
 
   background-color: $gray-bg-color;
 }
 
 .programs__title {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include font-param($font-size: 24px, $line-height: 37px);
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    margin-right: 19px;
+
+    border-radius: 50%;
+    background-color: $main-bg-color;
+  }
+}
+
+.programs__title--slim {
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 7px;
+    top: -4px;
+
+    width: 36px;
+    height: 50px;
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.programs__title--fat {
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: -10px;
+    top: 10px;
+
+    width: 67px;
+    height: 50px;
+
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .programs__description {
-  padding-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
   border-bottom: 1px solid $line-gray;
 
   @include font-param($font-family: $Arial);
 }
 
 .programs__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  min-width: 123px;
+
   @include font-param($font-size: 16px, $line-height: 16px);
   text-decoration: none;
   text-transform: uppercase;
   color: $main-text-color;
 
   cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+
+    width: 22px;
+    height: 10px;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+  }
 }

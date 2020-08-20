@@ -1,3 +1,8 @@
+.page-header__section-wraper {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
 .page-header__top-wraper {
   display: flex;
   justify-content: space-between;
@@ -25,5 +30,16 @@
   .page-header__section-wraper {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    background: linear-gradient(to right, $light-bg-color 60%, $main-bg-color 60%);
+  }
+
+  .page-header__section-wraper {
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat right top;
   }
 }

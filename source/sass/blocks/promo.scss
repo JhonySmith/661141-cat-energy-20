@@ -1,17 +1,83 @@
+.promo {
+  background: linear-gradient(to bottom, $main-bg-color 306px, white 306px);
+}
+
 .promo__wraper {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding-top: 27px;
+
+  background:
+    url("../img/index-can-mobile@1x.png") no-repeat center 167px,
+    url("../img/index-background-mobile@1x.jpg") no-repeat top;
 }
 
 .promo__description {
   @include font-param($font-size: 36px, $line-height: 36px);
   text-align: center;
   color: $light-text-color;
-  text-transform: uppercase;
 }
 
 .promo__slogan {
+  margin-top: 25px;
+  margin-bottom: 302px;
+
   @include font-param($line-height: 14px);
   color: $light-text-color;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background: none;
+  }
+
+  .promo__wraper {
+    align-items: flex-start;
+
+    padding-top: 27px;
+    padding-bottom: 526px;
+
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat center 230px;
+  }
+
+  .promo__description {
+    max-width: 414px;
+    margin-left: 83px;
+
+    font-size: 60px;
+    line-height: 60px;
+    color: $main-text-color;
+    text-align: left;
+  }
+
+  .promo__slogan {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 83px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: $main-text-color;
+  }
+
+  .promo__button {
+    margin-left: 83px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background: linear-gradient(to right, $light-bg-color 60%, $main-bg-color 60%);
+  }
+
+  .promo__wraper {
+    padding-bottom: 295px;
+
+    background:
+      url("../img/index-can-desktop@1x.png") no-repeat 558px top,
+      url("../img/index-background-desktop@1x.jpg") no-repeat right -92px;
+  }
 }
