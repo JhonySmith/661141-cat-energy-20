@@ -2,6 +2,14 @@
   background-color: $grey-bg-color;
 }
 
+.live-example__section-wraper {
+  padding-top: 27px;
+}
+
+.live-example__title {
+  margin-top: 0;
+}
+
 .live-example__description {
   @include font-param($font-family: $Arial);
 }

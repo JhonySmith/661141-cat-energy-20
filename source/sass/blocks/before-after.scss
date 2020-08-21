@@ -1,0 +1,29 @@
+.before-after__slider {
+  display: block;
+  position: relative;
+
+  box-sizing: border-box;
+  width: 84px;
+  height: 14px;
+
+  border: 1px solid $border-gray;
+  border-radius: 6px;
+
+  background-color: $light-bg-color;
+}
+
+.before-after__toggle {
+  position: absolute;
+  left: 5px;
+  top: 3px;
+
+  display: block;
+
+  box-sizing: border-box;
+  width: 35px;
+  height: 6px;
+
+  border-radius: 6px;
+
+  background-color: $main-bg-color;
+}
