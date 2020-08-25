@@ -1,4 +1,6 @@
 .live-example {
+  padding-bottom: 25px;
+
   background-color: $grey-bg-color;
 }
 
@@ -10,7 +12,14 @@
   margin-top: 0;
 }
 
+.live-example__text-wraper {
+  display: flex;
+  flex-direction: column;
+}
+
 .live-example__description {
+  padding-right: 5px;
+
   @include font-param($font-family: $Arial);
 }
 
@@ -60,6 +69,9 @@
 }
 
 .live-example__price {
+  margin-top: 35px;
+  margin-bottom: 42px;
+
   @include font-param($line-height: 20px);
   text-transform: uppercase;
   text-align: center;
@@ -68,4 +80,57 @@
 .live-example__before-after {
   @include font-param($font-size: 16px, $line-height: 20px);
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .live-example {
+    border-top: 1px solid $line-gray;
+
+    background-color: $light-bg-color;
+  }
+
+  .live-example__section-wraper {
+    padding-top: 43px;
+  }
+
+  .live-example__text-wraper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .live-example__description {
+    padding-right: 20px;
+    margin-bottom: 38px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .live-example__indicators-item {
+    min-width: 162px;
+    min-height: 77px;
+
+    margin-right: 42px;
+
+    font-size: 30px;
+  }
+
+  .live-example__indicators-comment {
+    top: 75px;
+
+    min-width: 120px;
+    padding: 0;
+
+    font-size: 14px;
+
+    background-color: $light-bg-color;
+  }
+
+  .live-example__price {
+    max-width: 175px;
+
+    font-size: 20px;
+    text-align: right;
+  }
 }
