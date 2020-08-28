@@ -86,7 +86,7 @@
   .live-example {
     border-top: 1px solid $line-gray;
 
-    background-color: $light-bg-color;
+    background: linear-gradient(to bottom, $light-bg-color 50%, $grey-bg-color 50%) ;
   }
 
   .live-example__section-wraper {
@@ -132,5 +132,22 @@
 
     font-size: 20px;
     text-align: right;
+  }
+
+  .live-example__before-after {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live-example__text-wraper {
+    flex-direction: column;
+
+    max-width: 436px;
+
+  }
+
+  .live-example__description {
+    max-width: 436px;
   }
 }

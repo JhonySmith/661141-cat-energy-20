@@ -1,3 +1,7 @@
+.contacts__section-wraper {
+  padding: 0;
+}
+
 .contacts__slogan {
   @include font-param($font-size: 16px);
   text-transform: uppercase;
@@ -7,4 +11,8 @@
 .contacts__adress {
   @include font-param($font-family: $Arial, $line-height: 20px);
   color: $dark-text-color;
+}
+
+.contacts__map {
+  margin: 0 auto;
 }
