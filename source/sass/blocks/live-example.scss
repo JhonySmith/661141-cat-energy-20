@@ -86,7 +86,7 @@
   .live-example {
     border-top: 1px solid $line-gray;
 
-    background: linear-gradient(to bottom, $light-bg-color 50%, $grey-bg-color 50%) ;
+    background: linear-gradient(to bottom, $light-bg-color 50%, $grey-bg-color 50%);
   }
 
   .live-example__section-wraper {
@@ -144,7 +144,6 @@
     flex-direction: column;
 
     max-width: 436px;
-
   }
 
   .live-example__description {

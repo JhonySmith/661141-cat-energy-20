@@ -30,20 +30,18 @@
     background-image: url("../img/advantage-leaf@1x.png");
   }
 
-   &--powder::before {
+  &--powder::before {
     background-image: url("../img/advantage-powder@1x.png");
   }
 
-   &--food::before {
+  &--food::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
 
-   &--clock::before {
+  &--clock::before {
     background-image: url("../img/advantage-clock@1x.png");
   }
 }
-
-
 
 .how-it-work__description {
   max-width: 200px;

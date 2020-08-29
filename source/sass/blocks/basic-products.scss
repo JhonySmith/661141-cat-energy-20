@@ -30,6 +30,8 @@
 
 .basic-products__info-table {
   width: 140px;
+
+  @include font-param($font-family: $Arial, $font-size: 12px);
 }
 
 .basic-products__value {
@@ -40,10 +42,6 @@
   max-width: 76px;
 
   @include font-param($font-size: 16px, $line-height: 20px);
-}
-
-.basic-products__info-table {
-  @include font-param($font-family: $Arial, $font-size: 12px)
 }
 
 .basic-products__button {
