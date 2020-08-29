@@ -1,3 +1,39 @@
+.main-nav {
+  display: none;
+
+  @include font-param($font-size: 20px, $line-height: 20px, $font-weight: 500);
+  text-transform: uppercase;
+}
+
 .main-nav__list {
+  padding: 0;
+
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+
+    min-width: 440px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    min-width: 475px;
+
+    font-size: 20px;
+    line-height: 30px;
+    color: $light-text-color;
+  }
 }

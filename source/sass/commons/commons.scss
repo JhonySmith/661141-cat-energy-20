@@ -13,6 +13,10 @@
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 .section-wraper {
   box-sizing: border-box;
 
@@ -26,7 +30,15 @@
   @include font-param($font-size: 36px, $line-height: 40px);
 }
 
+.page-body {
+  margin: 0;
+}
+
 .page-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   box-sizing: border-box;
   min-width: 280px;
   min-height: 40px;
@@ -35,9 +47,47 @@
 
   @include font-param;
   text-transform: uppercase;
+  text-decoration: none;
+
+  cursor: pointer;
 }
 
 .page-button--green {
   background-color: $buttons-color-main;
   color: $light-text-color;
+}
+
+.page-button--gray {
+  background-color: $buttons-color-gray;
+  color: $dark-text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .section-wraper {
+    width: 768px;
+
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .section-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .page-button {
+    min-width: 244px;
+    min-height: 54px;
+
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-wraper {
+    width: 1440px;
+
+    padding-right: 110px;
+    padding-left: 110px;
+  }
 }
