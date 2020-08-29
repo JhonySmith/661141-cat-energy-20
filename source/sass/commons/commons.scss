@@ -35,6 +35,10 @@
 }
 
 .page-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   box-sizing: border-box;
   min-width: 280px;
   min-height: 40px;
@@ -43,6 +47,7 @@
 
   @include font-param;
   text-transform: uppercase;
+  text-decoration: none;
 
   cursor: pointer;
 }
@@ -50,6 +55,11 @@
 .page-button--green {
   background-color: $buttons-color-main;
   color: $light-text-color;
+}
+
+.page-button--gray {
+  background-color: $buttons-color-gray;
+  color: $dark-text-color;
 }
 
 @media (min-width: $tablet-width) {
