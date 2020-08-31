@@ -41,3 +41,45 @@
 
   @include font-param($font-family: $Arial);
 }
+
+@media (min-width: $tablet-width) {
+  .additional-products__list {
+    width: 708px;
+
+    border-top: 1px solid $line-gray;
+    border-left: 1px solid $line-gray;
+    border-right: 1px solid $line-gray;
+  }
+
+  .additional-products__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-top: 26px;
+    padding-right: 38px;
+    padding-bottom: 26px;
+    padding-left: 38px;
+  }
+
+  .additional-products__item-title {
+    font-size: 20px;
+
+    margin: 0;
+  }
+
+  .additional-products__price-wraper {
+    font-size: 16px;
+  }
+
+  .additional-products__price {
+    margin: 0;
+    margin-left: 51px;
+  }
+
+  .additional-products__button {
+    width: 633px;
+
+    font-size: 16px;
+  }
+}
