@@ -1,4 +1,4 @@
-.additional-products-title {
+.additional-products__title {
   position: relative;
 
   font-size: 24px;
@@ -31,6 +31,9 @@
 }
 
 .additional-products__item-title {
+  margin-top: 13px;
+  margin-bottom: 13px;
+
   @include font-param($font-size: 16px, $line-height: 16px);
   text-transform: uppercase;
 }
@@ -42,9 +45,100 @@
   @include font-param($font-family: $Arial);
 }
 
+.additional-products__volume {
+  margin: 0;
+}
+
+.additional-products__price {
+  margin: 0;
+}
+
+.additional-products__button {
+  margin-top: 15px;
+}
+
+
+
+.additional-products__bonus {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 280px;
+  min-height: 289px;
+
+  margin-top: 39px;
+  padding-top: 60px;
+
+  background-color: $main-bg-color;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
+  &::before {
+    content: "";
+    display: block;
+
+    width: 57px;
+    height: 60px;
+
+    margin-bottom: 48px;
+
+    background: url("../img/icon-gift.svg") no-repeat center;
+  }
+}
+
+.additional-products__bonus-description {
+  width: 161px;
+
+  margin: 0;
+
+  @include font-param($font-family: $Arial, $font-size: 16px, $line-height: 20px);
+  color: $light-text-color;
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
+  .additional-products {
+    border-top: 2px solid $main-bg-color;
+  }
+
+  .additional-products__section-wraper {
+    position: relative;
+
+    padding-top: 92px;
+  }
+
+  .additional-products__title {
+    position: absolute;
+    left: 30px;
+    top: -25px;
+
+    margin: 0;
+
+    padding-left: 37px;
+    padding-right: 36px;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    background-color: $light-bg-color;
+
+    &::after {
+      display: none;
+    }
+  }
+
   .additional-products__list {
     width: 708px;
+
+    margin-top: 0;
 
     border-top: 1px solid $line-gray;
     border-left: 1px solid $line-gray;
@@ -68,11 +162,13 @@
     margin: 0;
   }
 
+  .additional-products__volume {
+    margin: 0;
+  }
+
   .additional-products__price-wraper {
     font-size: 16px;
   }
-
-
 
   .additional-products__price {
     margin: 0;
@@ -82,6 +178,110 @@
   .additional-products__button {
     width: 633px;
 
+    margin-top: 27px;
+
     font-size: 16px;
+  }
+
+  .additional-products__bonus {
+    flex-direction: row;
+    align-items: center;
+
+    width: 708px;
+    min-height: 200px;
+
+    padding-top: 0;
+
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+
+    &::before {
+      width: 58px;
+      height: 63px;
+
+      margin-left: 80px;
+      margin-right: 270px;
+      margin-bottom: 0;
+    }
+  }
+
+  .additional-products__bonus-description {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__list {
+    box-sizing: border-box;
+
+    width: 896px;
+
+    margin-right: 0;
+
+    border-top: none;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .additional-products__item {
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 15px 0 15px 0;
+
+  }
+
+  .additional-products__item-title {
+    width: 322px;
+  }
+
+  .additional-products__volume {
+    width: 245px;
+  }
+
+  .additional-products__price {
+    width: 85px;
+
+    margin-left: 0;
+  }
+
+  .additional-products__button {
+    width: 244px;
+
+    margin-top: 0;
+  }
+
+  .additional-products__bonus {
+    flex-direction: column;
+    align-content: center;
+
+    position: absolute;
+    top: 50px;
+    left: 1085px;
+
+    width: 245px;
+
+    padding-bottom: 53px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+
+    &::before {
+      margin: 0;
+      margin-top: 60px;
+      margin-bottom: 55px;
+    }
+  }
+
+  .additional-products__bonus-description {
+    text-align: center;
   }
 }
