@@ -62,7 +62,7 @@
 
 .data-form__direction-picker:checked +  .data-form__direction-picker-label{
   &::after {
-    content: "";
+    content: "1";
     position: absolute;
     left: 8.5px;
 
