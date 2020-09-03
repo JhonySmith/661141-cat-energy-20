@@ -1,3 +1,17 @@
+.data-form__description {
+  box-sizing: border-box;
+  display: block;
+  width: 280px;
+
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  padding-right: 54px;
+
+  @include font-param($line-height: 18px);
+  text-transform: uppercase;
+}
+
 .data-form__main-data {
   display: flex;
   justify-content: space-between;
@@ -20,13 +34,6 @@
   flex-grow: 1;
 }
 
-.data-form__description {
-  margin-bottom: 40px;
-
-  @include font-param($line-height: 18px);
-  text-transform: uppercase;
-}
-
 .data-form__direction {
   margin-top: 14px;
 
@@ -35,14 +42,18 @@
 
   border-top: 1px solid $line-gray;
   border-bottom: 1px solid $line-gray;
+}
 
-  & p {
-    margin: 0;
-  }
+.data-form__direction-input-wraper {
+  margin: 0;
 }
 
 .data-form__direction-picker-label {
   position: relative;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 13px;
 
   &::before {
     content: "";
@@ -60,9 +71,9 @@
   }
 }
 
-.data-form__direction-picker:checked +  .data-form__direction-picker-label{
+.data-form__direction-picker:checked + .data-form__direction-picker-label {
   &::after {
-    content: "1";
+    content: "";
     position: absolute;
     left: 8.5px;
 
@@ -76,6 +87,168 @@
 }
 
 .data-form__contact-data {
+  display: flex;
+
+  margin-top: 26px;
   padding: 0;
   border: none;
+
+  & label {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 14px;
+  }
+}
+
+.data-form__contact-input {
+  flex-grow: 1;
+
+  margin-left: 12px;
+}
+
+.data-form__fieldset-title {
+  width: 187px;
+
+  margin-bottom: 30px;
+
+  @include font-param($font-size: 24px, $line-height: 26px);
+}
+
+.data-form__comment-title {
+  display: block;
+  margin-bottom: 34px;
+
+  @include font-param($font-size: 24px, $line-height: 26px);
+}
+
+.data-form__comment-textarea {
+  box-sizing: border-box;
+  width: 280px;
+
+  padding: 13px 12px 9px 15px;
+
+  border: 1px solid $line-gray;
+
+  resize: none;
+
+  @include font-param($font-size: 16px, $line-height: 18px);
+  text-transform: uppercase;
+  color: $dark-text-color;
+}
+
+.data-form__more-title {
+  display: block;
+  margin-top: 34px;
+  margin-bottom: 34px;
+
+  @include font-param($font-size: 24px, $line-height: 26px);
+}
+
+.data-form__more-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 26px;
+    height: 26px;
+
+    margin-right: 18px;
+
+    border: 1px solid $line-gray;
+  }
+}
+
+.data-form__more-check:checked + .data-form__more-label {
+  &::after {
+    position: absolute;
+    left: 5px;
+
+    content: "";
+
+    width: 18px;
+    height: 26px;
+
+    background: url("../img/icon-tick.svg") no-repeat center;
+    cursor: pointer;
+  }
+}
+
+.data-from__submit-button {
+  margin-top: 34px;
+}
+
+.data-form__small-comment {
+  display: block;
+  margin-top: 21px;
+
+  @include font-param($font-family: $Arial);
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .data-form__description {
+    width: 630px;
+
+    padding-right: 307px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .data-form__main-data {
+    padding-right: 36px;
+    padding-left: 42px;
+  }
+
+  .data-form__main-info {
+    margin-left: 20px;
+  }
+
+  .data-form__main-data label {
+    margin-bottom: 20px;
+  }
+
+  .data-form__direction {
+    box-sizing: border-box;
+    width: 628px;
+
+    margin: 0 auto;
+    padding: 25px 0 25px 28px;
+
+    border: 1px solid $line-gray;
+  }
+
+  .data-form__direction-wraper {
+    padding: 0;
+  }
+
+  .data-form__direction-picker-label {
+
+  &::before {
+    width: 40px;
+    height: 40px;
+
+    margin-right: 20px;
+  }
+}
+
+.data-form__direction-picker:checked + .data-form__direction-picker-label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 11px;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    background-color: $main-bg-color;
+  }
+}
 }

@@ -36,67 +36,109 @@
   <main class="page-main">
     <h1 class="visually-hidden">Подбор программы</h1>
     <section class="data-form">
-      <div class="data-form__section-wraper section-wraper">
-      <h2 class="visually-hidden">Основные данные</h2>
-      <p class="data-form__description">
-        Заполните анкету, и мы подберем программу питания для вашего кота
-      </p>
-      <form action="" class="data-form__form">
-        <fieldset class="data-form__main-data">
-          <label class="label-text" for="name">
-            Имя:<sup>*</sup>
-            <input class="data-form__main-info input-form" type="text" id="name" name="name" placeholder="Барсик" required>
+
+        <h2 class="visually-hidden">Основные данные</h2>
+        <p class="data-form__description">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+        <form action="" class="data-form__form">
+          <div class="data-form__section-wraper section-wraper">
+          <fieldset class="data-form__main-data">
+            <label class="label-text" for="name">
+              Имя:<sup>*</sup>
+              <input class="data-form__main-info input-form" type="text" id="name" name="name" placeholder="Барсик"
+                required>
+            </label>
+
+            <label class="label-text" for="weight">
+              Вес (КГ):<sup>*</sup>
+              <input class="data-form__main-info input-form" type="text" id="weight" name="weight" placeholder="7"
+                required>
+            </label>
+
+            <label class="label-text" for="age">
+              Возраст (Лет):
+              <input class="data-form__main-info input-form" type="text" id="age" name="age" placeholder="7">
+            </label>
+      </div>
+
+            <div class="data-form__direction">
+              <div class="data-form__direction-wraper section-wraper">
+              <p class="data-form__direction-input-wraper">
+                <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="slim"
+                  value="slim" checked>
+                <label class="label-text data-form__direction-picker-label" for="slim">
+                  Похудение
+                </label>
+              </p>
+
+              <p class="data-form__direction-input-wraper">
+                <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="fat" value="fat">
+                <label class="label-text data-form__direction-picker-label" for="fat">
+                  Набор массы
+                </label>
+              </p>
+              <p class="data-form__direction-input-wraper">
+                <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="help"
+                  value="help">
+                <label class="label-text data-form__direction-picker-label" for="help">
+                  Не знаю (нужен ваш совет)
+                </label>
+              </p>
+              </div>
+            </div>
+
+          </fieldset>
+
+          <div class="data-form__section-wraper section-wraper">
+          <fieldset class="data-form__contact-data">
+
+            <legend class="data-form__fieldset-title fieldset-title">Контактные данные (владельца кота)</legend>
+            <label class="label-text" for="name">
+              E-MAIL:
+              <sup>*</sup>
+              <input class="input-form data-form__contact-input" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
+            </label>
+
+            <label class="label-text" for="weight">
+              Телефон:
+              <sup>*</sup>
+              <input class="input-form data-form__contact-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+            </label>
+
+          </fieldset>
+
+          <b class="data-form__comment-title">Комментарий</b>
+          <textarea class="data-form__comment-textarea" name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <b class="data-form__more-title">Дополнительно</b>
+          <p class="data-form__more-wraper">
+            <input class="data-form__more-check visually-hidden" type="checkbox" value="sugar" id="sugar" checked>
+            <label class="label-text data-form__more-label" for="sugar">
+              Сахарозаменитель
+            </label>
+          </p>
+          <p class="data-form__more-wraper">
+            <input class="data-form__more-check visually-hidden" type="checkbox" value="drink" id="drink">
+            <label class="label-text data-form__more-label" for="drink">
+
+              Питьевая вода
+          </p>
           </label>
-
-          <label class="label-text" for="weight">
-            Вес (КГ):<sup>*</sup>
-            <input class="data-form__main-info input-form" type="text" id="weight" name="weight" placeholder="7" required>
-          </label>
-
-          <label class="label-text" for="age">
-            Возраст (Лет):
-            <input class="data-form__main-info input-form" type="text" id="age" name="age" placeholder="7">
-          </label>
-
-          <div class="data-form__direction">
-            <p>
-              <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="slim" value="slim" checked>
-              <label class="label-text data-form__direction-picker-label" for="slim">
-                Похудение
-              </label>
-            </p>
-
-            <p>
-              <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="fat" value="fat">
-              <label class="label-text data-form__direction-picker-label" for="fat">
-                Набор массы
-              </label>
-            </p>
-            <p>
-              <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="help" value="help">
-              <label class="label-text data-form__direction-picker-label" for="help">
-                Не знаю (нужен ваш совет)
-              </label>
-            </p>
-          </div>
-        </fieldset>
-
-        <fieldset class="data-form__contact-data">
-          <legend class="data-form__fieldset-title fieldset-title">Контактные данные (владельца кота)</legend>
-          <label class="label-text" for="name">E-MAIL:<sup>*</sup></label>
-          <input class="input-form" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
-          <label class="label-text" for="weight">Телефон:<sup>*</sup></label>
-          <input class="input-form" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-        </fieldset>
-        <b>Комментарий</b>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <b>Дополнительно</b>
-        <input type="checkbox">Сахарозаменитель
-        <input type="checkbox">Питьевая вода
-        <input type="checkbox">Молоко
-        <input type="checkbox">Витамины
-        <button class"data-from__submit-button page-button page-button-green" type="submit">Отправить заявку</button>
-      </form>
+          <p class="data-form__more-wraper">
+            <input class="data-form__more-check visually-hidden" type="checkbox" value="milk" id="milk">
+            <label class="label-text data-form__more-label" for="milk">
+              Молоко
+            </label>
+          </p>
+          <p class="data-form__more-wraper">
+            <input class="data-form__more-check visually-hidden" type="checkbox" value="vitamins" id="vitamins">
+            <label class="label-text data-form__more-label" for="vitamins">
+              Витамины
+            </label>
+          </p>
+          <button class="data-from__submit-button page-button page-button--green" type="submit">Отправить заявку</button>
+        </form>
+        <small class="data-form__small-comment">* - Обязательные поля</small>
       </div>
     </section>
 
@@ -127,7 +169,7 @@
       </div>
     </section>
 
-    </main>
+   </main>
 
     <footer class="page-footer">
       <div class="page-footer__section-wraper section-wraper">
