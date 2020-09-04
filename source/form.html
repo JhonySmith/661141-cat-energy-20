@@ -90,26 +90,36 @@
 
           </fieldset>
 
-          <div class="data-form__section-wraper section-wraper">
-          <fieldset class="data-form__contact-data">
+<!--Контактные данные владельца кота-->
+            <fieldset class="data-form__contact-data">
 
-            <legend class="data-form__fieldset-title fieldset-title">Контактные данные (владельца кота)</legend>
-            <label class="label-text" for="name">
-              E-MAIL:
-              <sup>*</sup>
-              <input class="input-form data-form__contact-input" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
-            </label>
+              <div class="data_form__contact-wraper">
 
-            <label class="label-text" for="weight">
-              Телефон:
-              <sup>*</sup>
-              <input class="input-form data-form__contact-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-            </label>
+                <legend class="data-form__fieldset-title fieldset-title">
+                  Контактные данные (владельца кота)
+                </legend>
 
-          </fieldset>
+                <label class="label-text" for="name">
+                  E-MAIL:<sup>*</sup>
+                  <input class="input-form data-form__contact-input" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
+                </label>
 
-          <b class="data-form__comment-title">Комментарий</b>
-          <textarea class="data-form__comment-textarea" name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <label class="label-text" for="weight">
+                  Телефон:<sup>*</sup>
+                  <input class="input-form data-form__contact-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                </label>
+
+              </div>
+
+            </fieldset>
+
+          <div class="comment-form">
+
+            <label for="comment" class="data-form__comment-title">Комментарий</label>
+            <textarea class="data-form__comment-textarea" name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+
+          </div>
+
           <b class="data-form__more-title">Дополнительно</b>
           <p class="data-form__more-wraper">
             <input class="data-form__more-check visually-hidden" type="checkbox" value="sugar" id="sugar" checked>
