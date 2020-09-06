@@ -91,11 +91,11 @@
           </fieldset>
 
 <!--Контактные данные владельца кота-->
-            <fieldset class="data-form__contact-data">
+            <fieldset class="data-form__contact-data data-form__bordered-block">
 
-              <div class="data_form__contact-wraper">
+              <div class="data_form__contact-wraper data-form__block-wraper">
 
-                <legend class="data-form__fieldset-title fieldset-title">
+                <legend class="data-form__fieldset-title fieldset-title data-form__block-title">
                   Контактные данные (владельца кота)
                 </legend>
 
@@ -113,42 +113,47 @@
 
             </fieldset>
 
-          <div class="comment-form">
-
-            <label for="comment" class="data-form__comment-title">Комментарий</label>
-            <textarea class="data-form__comment-textarea" name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
-
+<!--Комментарий-->
+          <div class="data-form__comment-form data-form__bordered-block">
+              <div class="data-form__comment-form-wraper data-form__block-wraper">
+                <label for="comment" class="data-form__comment-title data-form__block-title">Комментарий</label>
+                <textarea class="data-form__comment-textarea" name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
           </div>
 
-          <b class="data-form__more-title">Дополнительно</b>
-          <p class="data-form__more-wraper">
-            <input class="data-form__more-check visually-hidden" type="checkbox" value="sugar" id="sugar" checked>
-            <label class="label-text data-form__more-label" for="sugar">
-              Сахарозаменитель
-            </label>
-          </p>
-          <p class="data-form__more-wraper">
-            <input class="data-form__more-check visually-hidden" type="checkbox" value="drink" id="drink">
-            <label class="label-text data-form__more-label" for="drink">
+          <div class="data-form__more-form data-form__bordered-block">
+            <div class="data-form__more-form__wraper data-form__block-wraper">
+              <b class="data-form__more-title data-form__block-title">Дополнительно</b>
+              <p class="data-form__more-wraper">
+                <input class="data-form__more-check visually-hidden" type="checkbox" value="sugar" id="sugar" checked>
+                <label class="label-text data-form__more-label" for="sugar">
+                  Сахарозаменитель
+                </label>
+              </p>
+              <p class="data-form__more-wraper">
+                <input class="data-form__more-check visually-hidden" type="checkbox" value="drink" id="drink">
+                <label class="label-text data-form__more-label" for="drink">
 
-              Питьевая вода
-          </p>
-          </label>
-          <p class="data-form__more-wraper">
-            <input class="data-form__more-check visually-hidden" type="checkbox" value="milk" id="milk">
-            <label class="label-text data-form__more-label" for="milk">
-              Молоко
-            </label>
-          </p>
-          <p class="data-form__more-wraper">
-            <input class="data-form__more-check visually-hidden" type="checkbox" value="vitamins" id="vitamins">
-            <label class="label-text data-form__more-label" for="vitamins">
-              Витамины
-            </label>
-          </p>
-          <button class="data-from__submit-button page-button page-button--green" type="submit">Отправить заявку</button>
-        </form>
-        <small class="data-form__small-comment">* - Обязательные поля</small>
+                  Питьевая вода
+              </p>
+              </label>
+              <p class="data-form__more-wraper">
+                <input class="data-form__more-check visually-hidden" type="checkbox" value="milk" id="milk">
+                <label class="label-text data-form__more-label" for="milk">
+                  Молоко
+                </label>
+              </p>
+              <p class="data-form__more-wraper">
+                <input class="data-form__more-check visually-hidden" type="checkbox" value="vitamins" id="vitamins">
+                <label class="label-text data-form__more-label" for="vitamins">
+                  Витамины
+                </label>
+              </p>
+            </div>
+            <button class="data-from__submit-button page-button page-button--green" type="submit">Отправить заявку</button>
+          </form>
+          <small class="data-form__small-comment">* - Обязательные поля</small>
+        </div>
       </div>
     </section>
 
@@ -179,7 +184,7 @@
       </div>
     </section>
 
-   </main>
+  </main>
 
     <footer class="page-footer">
       <div class="page-footer__section-wraper section-wraper">
