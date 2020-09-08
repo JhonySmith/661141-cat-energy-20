@@ -27,6 +27,8 @@
 }
 
 .page-title {
+  margin: 0;
+
   @include font-param($font-size: 36px, $line-height: 36px);
 }
 

@@ -34,155 +34,166 @@
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">Подбор программы</h1>
+    <section class="form-header section-wraper">
+      <h1 class="form-header__title page-title">Подбор программы</h1>
+      <p class="form-header__description">
+        Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
+    </section>
+
     <section class="data-form">
 
-        <h2 class="visually-hidden">Основные данные</h2>
-        <p class="data-form__description">
-          Заполните анкету, и мы подберем программу питания для вашего кота
-        </p>
-        <form action="" class="data-form__form">
-          <div class="data-form__section-wraper section-wraper">
-          <fieldset class="data-form__main-data">
-            <label class="label-text" for="name">
-              Имя:<sup>*</sup>
-              <input class="data-form__main-info input-form" type="text" id="name" name="name" placeholder="Барсик"
-                required>
-            </label>
+      <h2 class="visually-hidden">Основные данные</h2>
 
-            <label class="label-text" for="weight">
-              Вес (КГ):<sup>*</sup>
-              <input class="data-form__main-info input-form" type="text" id="weight" name="weight" placeholder="7"
-                required>
-            </label>
+      <form action="" class="data-form__form">
 
-            <label class="label-text" for="age">
-              Возраст (Лет):
-              <input class="data-form__main-info input-form" type="text" id="age" name="age" placeholder="7">
-            </label>
-      </div>
+        <fieldset class="data-form__main-data">
+          <div class="data-form__main-data-wraper">
+            <div class="data-form__main-data-input">
+              <label class="data-form__main-data-label label-text" for="name">
+                Имя:<sup>*</sup>
+                <input class="data-form__main-info input-form" type="text" id="name" name="name" placeholder="Барсик"
+                  required>
+              </label>
+
+              <label class="data-form__main-data-label label-text" for="weight">
+                Вес (КГ):<sup>*</sup>
+                <input class="data-form__main-info input-form" type="text" id="weight" name="weight" placeholder="7"
+                  required>
+              </label>
+
+              <label class="data-form__main-data-label label-text" for="age">
+                Возраст (Лет):
+                <input class="data-form__main-info input-form" type="text" id="age" name="age" placeholder="7">
+              </label>
+            </div>
 
             <div class="data-form__direction">
-              <div class="data-form__direction-wraper section-wraper">
-              <p class="data-form__direction-input-wraper">
-                <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="slim"
-                  value="slim" checked>
-                <label class="label-text data-form__direction-picker-label" for="slim">
-                  Похудение
-                </label>
-              </p>
+              <div class="data-form__direction-wraper">
+                <p class="data-form__direction-input-wraper">
+                  <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="slim"
+                    value="slim" checked>
+                  <label class="label-text data-form__direction-picker-label" for="slim">
+                    Похудение
+                  </label>
+                </p>
 
-              <p class="data-form__direction-input-wraper">
-                <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="fat" value="fat">
-                <label class="label-text data-form__direction-picker-label" for="fat">
-                  Набор массы
-                </label>
-              </p>
-              <p class="data-form__direction-input-wraper">
-                <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="help"
-                  value="help">
-                <label class="label-text data-form__direction-picker-label" for="help">
-                  Не знаю (нужен ваш совет)
-                </label>
-              </p>
+                <p class="data-form__direction-input-wraper">
+                  <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="fat" value="fat">
+                  <label class="label-text data-form__direction-picker-label" for="fat">
+                    Набор массы
+                  </label>
+                </p>
+                <p class="data-form__direction-input-wraper">
+                  <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="help"
+                    value="help">
+                  <label class="label-text data-form__direction-picker-label" for="help">
+                    Не знаю (нужен ваш совет)
+                  </label>
+                </p>
               </div>
+            </div>
+          </div>
+        </fieldset>
+
+<!--Контактные данные владельца кота-->
+          <fieldset class="data-form__contact-data data-form__bordered-block">
+
+            <div class="data_form__contact-wraper data-form__block-wraper">
+
+              <legend class="data-form__fieldset-title fieldset-title data-form__block-title">
+                Контактные данные (владельца кота)
+              </legend>
+
+              <label class="label-text" for="name">
+                E-MAIL:<sup>*</sup>
+                <input class="input-form data-form__contact-input" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
+              </label>
+
+              <label class="label-text" for="weight">
+                Телефон:<sup>*</sup>
+                <input class="input-form data-form__contact-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+              </label>
+
             </div>
 
           </fieldset>
 
-<!--Контактные данные владельца кота-->
-            <fieldset class="data-form__contact-data data-form__bordered-block">
-
-              <div class="data_form__contact-wraper data-form__block-wraper">
-
-                <legend class="data-form__fieldset-title fieldset-title data-form__block-title">
-                  Контактные данные (владельца кота)
-                </legend>
-
-                <label class="label-text" for="name">
-                  E-MAIL:<sup>*</sup>
-                  <input class="input-form data-form__contact-input" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
-                </label>
-
-                <label class="label-text" for="weight">
-                  Телефон:<sup>*</sup>
-                  <input class="input-form data-form__contact-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-                </label>
-
-              </div>
-
-            </fieldset>
-
 <!--Комментарий-->
-          <div class="data-form__comment-form data-form__bordered-block">
-              <div class="data-form__comment-form-wraper data-form__block-wraper">
-                <label for="comment" class="data-form__comment-title data-form__block-title">Комментарий</label>
-                <textarea class="data-form__comment-textarea" name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </div>
+        <div class="data-form__comment-form data-form__bordered-block">
+            <div class="data-form__comment-form-wraper data-form__block-wraper">
+              <label for="comment" class="data-form__comment-title data-form__block-title">Комментарий</label>
+              <textarea class="data-form__comment-textarea" name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+        </div>
+
+        <div class="data-form__more-form data-form__bordered-block">
+          <div class="data-form__more-form__wraper data-form__block-wraper">
+            <b class="data-form__more-title data-form__block-title">Дополнительно</b>
+            <p class="data-form__more-wraper">
+              <input class="data-form__more-check visually-hidden" type="checkbox" value="sugar" id="sugar" checked>
+              <label class="label-text data-form__more-label" for="sugar">
+                Сахарозаменитель
+              </label>
+            </p>
+            <p class="data-form__more-wraper">
+              <input class="data-form__more-check visually-hidden" type="checkbox" value="drink" id="drink">
+              <label class="label-text data-form__more-label" for="drink">
+
+                Питьевая вода
+            </p>
+            </label>
+            <p class="data-form__more-wraper">
+              <input class="data-form__more-check visually-hidden" type="checkbox" value="milk" id="milk">
+              <label class="data-form__more-label label-text" for="milk">
+                Молоко
+              </label>
+            </p>
+            <p class="data-form__more-wraper">
+              <input class="data-form__more-check visually-hidden" type="checkbox" value="vitamins" id="vitamins">
+              <label class="label-text data-form__more-label" for="vitamins">
+                Витамины
+              </label>
+            </p>
+          </div>
           </div>
 
-          <div class="data-form__more-form data-form__bordered-block">
-            <div class="data-form__more-form__wraper data-form__block-wraper">
-              <b class="data-form__more-title data-form__block-title">Дополнительно</b>
-              <p class="data-form__more-wraper">
-                <input class="data-form__more-check visually-hidden" type="checkbox" value="sugar" id="sugar" checked>
-                <label class="label-text data-form__more-label" for="sugar">
-                  Сахарозаменитель
-                </label>
-              </p>
-              <p class="data-form__more-wraper">
-                <input class="data-form__more-check visually-hidden" type="checkbox" value="drink" id="drink">
-                <label class="label-text data-form__more-label" for="drink">
-
-                  Питьевая вода
-              </p>
-              </label>
-              <p class="data-form__more-wraper">
-                <input class="data-form__more-check visually-hidden" type="checkbox" value="milk" id="milk">
-                <label class="label-text data-form__more-label" for="milk">
-                  Молоко
-                </label>
-              </p>
-              <p class="data-form__more-wraper">
-                <input class="data-form__more-check visually-hidden" type="checkbox" value="vitamins" id="vitamins">
-                <label class="label-text data-form__more-label" for="vitamins">
-                  Витамины
-                </label>
-              </p>
-            </div>
+          <div class="data-form__submit-block data-form__block-wraper">
             <button class="data-from__submit-button page-button page-button--green" type="submit">Отправить заявку</button>
-          </form>
-          <small class="data-form__small-comment">* - Обязательные поля</small>
-        </div>
-      </div>
-    </section>
+            <small class="data-form__small-comment">* - Обязательные поля</small>
+          </div>
+        </form>
 
-    <section class="contacts">
-      <div class="contacts__section-wraper section-wraper">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__text-block">
-          <p class="contacts__slogan">
-            приглашаем
-            к сотрудничеству дилеров!
-          </p>
-          <p class="contacts__adress">
-            ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург
-          </p>
-        </div>
 
-        <div class="contacts__map">
-          <div style="position:relative;overflow:hidden;"><a
-              href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-              style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
-              href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323634%2C59.938569&utm_medium=mapframe&utm_source=maps&z=18.23"
-              style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 —
-              Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQtf-BRPD" width="320" height="362"
-              frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-        </div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="contacts__section-wraper section-wraper">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="contacts__text-block">
+        <p class="contacts__slogan">
+          приглашаем
+          к сотрудничеству дилеров!
+        </p>
+        <p class="contacts__adress">
+          ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург
+        </p>
       </div>
-    </section>
+
+      <div class="contacts__map">
+        <div style="position:relative;overflow:hidden;"><a
+            href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+            href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323634%2C59.938569&utm_medium=mapframe&utm_source=maps&z=18.23"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 —
+            Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQtf-BRPD" width="320" height="362"
+            frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+      </div>
+    </div>
+  </section>
 
   </main>
 
