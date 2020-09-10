@@ -26,6 +26,12 @@
   padding-left: 20px;
 }
 
+.page-title {
+  margin: 0;
+
+  @include font-param($font-size: 36px, $line-height: 36px);
+}
+
 .section-title {
   @include font-param($font-size: 36px, $line-height: 40px);
 }
@@ -40,8 +46,10 @@
   align-items: center;
 
   box-sizing: border-box;
-  min-width: 280px;
-  min-height: 40px;
+  width: 280px;
+
+  padding-top: 11px;
+  padding-bottom: 11px;
 
   border: none;
 
@@ -55,10 +63,30 @@
 .page-button--green {
   background-color: $buttons-color-main;
   color: $light-text-color;
+
+  &:hover {
+    background-color: $main-bg-color-hover;
+  }
 }
 
 .page-button--gray {
   background-color: $buttons-color-gray;
+  color: $dark-text-color;
+}
+
+.input-form {
+  padding: 13px 0 14px 14px;
+
+  border: 1px solid $line-gray;
+
+  @include font-param($font-size: 16px, $line-height: 18px);
+  text-transform: uppercase;
+  color: $dark-text-color;
+}
+
+.label-text {
+  @include font-param($font-size: 16px, $line-height: 18px);
+  text-transform: uppercase;
   color: $dark-text-color;
 }
 
@@ -70,16 +98,32 @@
     padding-left: 30px;
   }
 
+  .page-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .section-title {
     font-size: 60px;
     line-height: 60px;
   }
 
   .page-button {
-    min-width: 244px;
-    min-height: 54px;
+    width: 244px;
 
     font-size: 20px;
+  }
+
+  .input-form {
+    padding: 11px 0 11px 19px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .label-text {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

@@ -8,6 +8,14 @@
 .page-footer__logo {
   display: flex;
   justify-content: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__socials-list {
