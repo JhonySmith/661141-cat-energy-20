@@ -260,6 +260,8 @@
 
   .data-form__direction-wraper {
     width: 640px;
+
+    padding: 0;
   }
 
   .data-form__contact-data label {
@@ -287,10 +289,6 @@
     padding: 25px 0 25px 28px;
 
     border: 1px solid $line-gray;
-  }
-
-  .data-form__direction-wraper {
-    padding: 0;
   }
 
   .data-form__direction-picker-label {
@@ -332,12 +330,10 @@
   }
 
   .data-form__submit-block {
-    padding-top: 38px;
-  }
-
-  .data-form__submit-block {
     display: flex;
     align-items: center;
+
+    padding-top: 38px;
   }
 
   .data-from__submit-button {
@@ -364,7 +360,8 @@
     margin: 0;
   }
 
-  .data-form__direction-wraper, .data-form__direction {
+  .data-form__direction-wraper,
+  .data-form__direction {
     width: 570px;
     margin: 0;
   }

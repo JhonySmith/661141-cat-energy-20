@@ -1,12 +1,14 @@
 .page-header__section-wraper {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 0 12px 0;
 }
 
 .page-header__top-wraper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .page-header__toggle {
@@ -18,6 +20,27 @@
   border: none;
 
   background: url("../img/icon-mobile-menu.svg") no-repeat center;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__close-toggle {
+  width: 18px;
+  height: 18px;
+
+  padding: 0;
+
+  border: none;
+
+  background: url("../img/icon-close.svg") no-repeat center;
 
   cursor: pointer;
 
@@ -49,15 +72,25 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .page-header__top-wraper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 
 @media (min-width: $desktop-width) {
-  .page-header {
+  .page-header--main {
     background: linear-gradient(to right, $light-bg-color 60%, $main-bg-color 60%);
   }
 
-  .page-header__section-wraper {
+  .page-header__section-wraper--main {
     background: url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+  }
+
+  .page-header__top-wraper {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

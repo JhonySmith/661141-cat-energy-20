@@ -15,8 +15,11 @@
 
   @media (min-resolution: 2dppx) {
     background:
-    url("../img/index-can-mobile@2x.png") no-repeat center 167px,
-    url("../img/index-background-mobile@2x.jpg") no-repeat top;
+      url("../img/index-can-mobile@2x.png") no-repeat center 167px,
+      url("../img/index-background-mobile@2x.jpg") no-repeat top;
+    background-size:
+      280px auto,
+      320px auto;
   }
 }
 
@@ -48,8 +51,10 @@
 
     background: url("../img/index-can-tablet@1x.jpg") no-repeat center 230px;
 
+
     @media (min-resolution: 2dppx) {
       background: url("../img/index-can-tablet@2x.jpg") no-repeat center 230px;
+      background-size: 709px auto;
     }
   }
 
@@ -92,8 +97,11 @@
 
     @media (min-resolution: 2dppx) {
       background:
-      url("../img/index-can-desktop@2x.png") no-repeat 558px top,
-      url("../img/index-background-desktop@2x.jpg") no-repeat right -92px;
+        url("../img/index-can-desktop@2x.png") no-repeat 558px top,
+        url("../img/index-background-desktop@2x.jpg") no-repeat right -92px;
+      background-size:
+        552px auto,
+        720px auto;
     }
   }
 }

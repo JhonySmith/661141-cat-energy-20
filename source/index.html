@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header">
-      <div class="page-header__section-wraper section-wraper">
+    <header class="page-header page-header--main">
+      <div class="page-header__section-wraper page-header__section-wraper--main section-wraper">
       <div class="page-header__top-wraper">
         <a href="" class="page-header__logo">
           <picture class="page-header__logo-image">
@@ -20,10 +20,17 @@
         <button class="page-header__toggle without-js-hidden visually-hidden show-mobile" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <button class="page-header__close-toggle hidden show-mobile" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
       </div>
       <nav class="main-nav with-js-hidden">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">Главная</li>
+          <li class="site-list__item">
+            <p class="site-list__active-element site-list__active-element--main">
+              Главная
+            </p>
+          </li>
           <li class="site-list__item">
             <a href="./catalog.html">Каталог продукции</a>
           </li>
@@ -205,7 +212,7 @@
           </li>
           <li>
             <a href="https://www.instagram.com/htmlacademy/" class="socials__item socials__item--instagramm">
-             <span class="visually-hidden">Мы в инстаграмме</span>
+              <span class="visually-hidden">Мы в инстаграмме</span>
             </a>
           </li>
           <li>
@@ -225,6 +232,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
