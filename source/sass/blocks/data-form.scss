@@ -368,4 +368,22 @@
     width: 570px;
     margin: 0;
   }
+
+  .data-form__bordered-block {
+    margin-top: 90px;
+
+    border-top: 2px solid $main-bg-color;
+  }
+
+  .data-form__block-wraper {
+    width: 1220px;
+  }
+
+  .data-from__submit-button {
+    width: 568px;
+  }
+
+  .data-form__submit-block {
+    margin-bottom: 82px;
+  }
 }
