@@ -86,7 +86,7 @@
 
 .programs__link {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 
 
@@ -106,7 +106,20 @@
     width: 22px;
     height: 10px;
 
+    margin-left: 25px;
+
     background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  &:hover::after {
+    width: 32px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

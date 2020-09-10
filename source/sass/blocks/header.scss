@@ -1,6 +1,6 @@
 .page-header__section-wraper {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .page-header__top-wraper {
@@ -20,6 +20,24 @@
   background: url("../img/icon-mobile-menu.svg") no-repeat center;
 
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo-image {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {

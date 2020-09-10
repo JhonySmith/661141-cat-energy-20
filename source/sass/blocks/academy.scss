@@ -2,6 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover {
+    path {
+      fill: $main-bg-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .academy__text-link {

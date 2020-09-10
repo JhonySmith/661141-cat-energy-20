@@ -63,6 +63,10 @@
 .page-button--green {
   background-color: $buttons-color-main;
   color: $light-text-color;
+
+  &:hover {
+    background-color: $main-bg-color-hover;
+  }
 }
 
 .page-button--gray {
