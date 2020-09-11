@@ -86,11 +86,12 @@
   .live-example {
     border-top: 1px solid $line-gray;
 
-    background: linear-gradient(to bottom, $light-bg-color 50%, $grey-bg-color 50%);
+    background: linear-gradient(to bottom, $light-bg-color 619px, $grey-bg-color 619px);
   }
 
   .live-example__section-wraper {
     padding-top: 43px;
+    padding-bottom: 68px;
   }
 
   .live-example__text-wraper {
@@ -140,6 +141,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .live-example {
+    border: none;
+
+    background: linear-gradient(to bottom, $light-bg-color 194px, $grey-bg-color 194px);
+  }
+
+  .live-example__section-wraper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .live-example__text-wraper {
     flex-direction: column;
 
@@ -148,5 +160,16 @@
 
   .live-example__description {
     max-width: 436px;
+
+    padding-right: 0;
+  }
+
+  .live-example__indicators-comment {
+    background-color: $grey-bg-color;
+  }
+
+  .live-example__price {
+    max-width: 330px;
+    text-align: left;
   }
 }
