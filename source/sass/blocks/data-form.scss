@@ -1,3 +1,7 @@
+.data-form {
+  padding-bottom: 32px;
+}
+
 .data-form__block-wraper {
   display: block;
 
@@ -222,6 +226,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .data-form {
+    padding-bottom: 72px;
+  }
+
   .data-form__bordered-block {
     margin-top: 90px;
 
@@ -347,6 +355,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .data-form {
+    padding-bottom: 82px;
+  }
+
+
   .data-form__main-data-wraper {
     display: flex;
     justify-content: space-between;

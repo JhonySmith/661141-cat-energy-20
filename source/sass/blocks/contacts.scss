@@ -1,3 +1,7 @@
+.contacts--catalog {
+  background-color: $grey-bg-color;
+}
+
 .contacts__section-wraper {
   padding: 0;
 }
@@ -32,8 +36,9 @@
 }
 
 .contacts__map iframe {
-  width: 320px;
   height: 362px;
+
+  margin-bottom: -4px;
 
   border: none;
 }
@@ -60,7 +65,6 @@
   }
 
   .contacts__map iframe {
-    width: 768px;
     height: 400px;
   }
 }
@@ -85,7 +89,6 @@
   }
 
   .contacts__map iframe {
-    width: 1440px;
     height: 400px;
   }
 }
