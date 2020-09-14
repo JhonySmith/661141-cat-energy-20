@@ -27,7 +27,7 @@
         </button>
       </div>
       <nav class="main-nav with-js-hidden">
-        <ul class="main-nav__list main-nav__list--main site-list">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="./index.html">Главная</a>
           </li>
@@ -35,7 +35,7 @@
             <a href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <p class="site-list__active-element site-list__active-element--main">
+            <p class="site-list__active-element">
               Подбор программы
             </p>
           </li>
@@ -84,21 +84,21 @@
                 <p class="data-form__direction-input-wraper">
                   <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="slim"
                     value="slim" checked>
-                  <label class="label-text data-form__direction-picker-label" for="slim">
+                  <label class="label-text data-form__direction-picker-label" for="slim" tabindex="0">
                     Похудение
                   </label>
                 </p>
 
                 <p class="data-form__direction-input-wraper">
                   <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="fat" value="fat">
-                  <label class="label-text data-form__direction-picker-label" for="fat">
+                  <label class="label-text data-form__direction-picker-label" for="fat" tabindex="0">
                     Набор массы
                   </label>
                 </p>
                 <p class="data-form__direction-input-wraper">
                   <input class="data-form__direction-picker visually-hidden" type="radio" name="aim" id="help"
                     value="help">
-                  <label class="label-text data-form__direction-picker-label" for="help">
+                  <label class="label-text data-form__direction-picker-label" for="help" tabindex="0">
                     Не знаю (нужен ваш совет)
                   </label>
                 </p>
@@ -115,14 +115,14 @@
                 Контактные данные (владельца кота)
               </legend>
 
-              <label class="label-text" for="name">
+              <label class="label-text label-text__contact-input--email" for="email">
                 E-MAIL:<sup>*</sup>
                 <input class="input-form data-form__contact-input" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
               </label>
 
-              <label class="label-text" for="weight">
+              <label class="label-text label-text__contact-input--phone" for="phone">
                 Телефон:<sup>*</sup>
-                <input class="input-form data-form__contact-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="input-form data-form__contact-input data-form__contact-input--phone" pattern="\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
               </label>
 
             </div>
@@ -140,27 +140,27 @@
           <div class="data-form__more-form__wraper data-form__block-wraper">
             <b class="data-form__more-title data-form__block-title">Дополнительно</b>
             <p class="data-form__more-wraper">
-              <input class="data-form__more-check visually-hidden" type="checkbox" value="sugar" id="sugar" checked>
-              <label class="label-text data-form__more-label" for="sugar">
+              <input class="data-form__more-check visually-hidden" type="checkbox" value="sugar" id="sugar" tabindex="-1" checked>
+              <label class="label-text data-form__more-label" for="sugar" tabindex="0">
                 Сахарозаменитель
               </label>
             </p>
             <p class="data-form__more-wraper">
-              <input class="data-form__more-check visually-hidden" type="checkbox" value="drink" id="drink">
-              <label class="label-text data-form__more-label" for="drink">
+              <input class="data-form__more-check visually-hidden" type="checkbox" value="drink" id="drink" tabindex="-1">
+              <label class="label-text data-form__more-label" for="drink" tabindex="0">
 
                 Питьевая вода
             </p>
             </label>
             <p class="data-form__more-wraper">
-              <input class="data-form__more-check visually-hidden" type="checkbox" value="milk" id="milk">
-              <label class="data-form__more-label label-text" for="milk">
+              <input class="data-form__more-check visually-hidden" type="checkbox" value="milk" id="milk" tabindex="-1">
+              <label class="data-form__more-label label-text" for="milk" tabindex="0">
                 Молоко
               </label>
             </p>
             <p class="data-form__more-wraper">
-              <input class="data-form__more-check visually-hidden" type="checkbox" value="vitamins" id="vitamins">
-              <label class="label-text data-form__more-label" for="vitamins">
+              <input class="data-form__more-check visually-hidden" type="checkbox" value="vitamins" id="vitamins" tabindex="-1">
+              <label class="label-text data-form__more-label" for="vitamins" tabindex="0">
                 Витамины
               </label>
             </p>
