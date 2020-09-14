@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: column;
 
+  margin-top: 41px;
   padding: 0;
+
+  border-top: 1px solid $line-gray;
 
   list-style-type: none;
 }
@@ -98,6 +101,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    margin-top: 83px;
+
+    border-top: none;
   }
 
   .basic-products__item {

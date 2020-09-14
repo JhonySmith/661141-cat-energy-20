@@ -72,6 +72,14 @@
 .page-button--gray {
   background-color: $buttons-color-gray;
   color: $dark-text-color;
+
+  &:hover {
+    background-color: $grey-bg-color-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .input-form {
@@ -82,12 +90,26 @@
   @include font-param($font-size: 16px, $line-height: 18px);
   text-transform: uppercase;
   color: $dark-text-color;
+
+  &:focus {
+    outline: 2px solid $dark-text-color;
+    border-color: transparent;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    outline: 2px solid #ff8282;
+    border-color: transparent;
+  }
 }
 
 .label-text {
   @include font-param($font-size: 16px, $line-height: 18px);
   text-transform: uppercase;
   color: $dark-text-color;
+
+  &:focus {
+    outline: 2px solid $dark-text-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
