@@ -72,6 +72,14 @@
 .page-button--gray {
   background-color: $buttons-color-gray;
   color: $dark-text-color;
+
+  &:hover {
+    background-color: $grey-bg-color-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .input-form {
