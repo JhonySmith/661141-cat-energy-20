@@ -65,6 +65,10 @@
     padding: 0;
   }
 
+  .socials li {
+    margin-left: 25px;
+  }
+
   .socials__item {
     &--vk::before {
       width: 30px;

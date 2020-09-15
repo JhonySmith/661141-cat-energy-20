@@ -1,4 +1,9 @@
+.how-it-work__title {
+  margin-bottom: 39px;
+}
+
 .how-it-work__list {
+  margin-bottom: 40px;
   padding: 0;
 
   list-style-type: none;
@@ -54,6 +59,8 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+
+    margin-bottom: 0;
   }
 
   .how-it-work__item {
@@ -63,8 +70,13 @@
     align-items: flex-start;
 
     width: 247px;
-    margin-right: 107px;
-    margin-bottom: 144px;
+
+    margin-bottom: 104px;
+    padding-top: 30px;
+
+    &:nth-child(odd) {
+      margin-right: 137px;
+    }
 
     &::before {
       width: 80px;
@@ -78,6 +90,8 @@
       z-index: -1;
       top: 0;
       left: 113px;
+
+      padding-top: 30px;
 
       @include font-param($font-size: 280px, $line-height: 204px);
       color: $gray-bg-color;
@@ -101,7 +115,7 @@
   }
 
   .how-it-work__description {
-    min-width: 245px;
+    max-width: 245px;
 
     font-size: 16px;
     line-height: 24px;
@@ -110,7 +124,8 @@
 
 @media (min-width: $desktop-width) {
   .how-it-work__title {
-    margin-bottom: 72px;
+    margin-top: 40px;
+    margin-bottom: 35px;
   }
 
   .how-it-work__list {
@@ -130,6 +145,11 @@
 
     &::after {
       margin-top: 40px;
+      padding-top: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 15px;
     }
   }
 }

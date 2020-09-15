@@ -33,6 +33,8 @@
 @media (min-width: $tablet-width) {
   .site-list__item {
     border: none;
+
+    font-size: 18px;
   }
 
   .site-list__active-element {
@@ -43,5 +45,9 @@
 @media (min-width: $desktop-width) {
   .site-list__active-element--main {
     border-bottom: 2px solid $light-bg-color;
+  }
+
+  .site-list__active-element {
+    padding-bottom: 5px;
   }
 }
