@@ -1,6 +1,6 @@
 .basic-products__list {
   display: grid;
-  grid-row-gap: 22px;
+  grid-row-gap: 20px;
 
   margin-top: 40px;
   padding: 0;
@@ -15,15 +15,18 @@
     "product-img product-table"
     "product-button product-button";
 
+  margin: 0 auto;
+  padding-top: 8px;
+
   border-top: 1px solid $line-gray;
 }
 
 .basic-products__title {
   grid-area: product-title;
+  align-self: center;
 
   width: 75px;
-  margin-top: 20px;
-  margin-bottom: 0;
+  margin: 0;
 
   @include font-param($font-size: 16px, $line-height: 20px);
   text-transform: uppercase;
@@ -51,8 +54,6 @@
 
 .basic-products__button {
   grid-area: product-button;
-
-  margin-top: 7px;
 }
 
 .basic-products__show-more {
@@ -62,13 +63,14 @@
   flex-direction: column;
   justify-content: center;
 
+  width: 320px;
   padding-top: 79px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 26px;
-    left: 125px;
+    top: 27px;
+    left: 145px;
 
     display: block;
     width: 30px;
@@ -81,6 +83,7 @@
 
 .basic-products__show-more-text {
   @include font-param($font-size: 16px, $line-height: 20px);
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -89,40 +92,39 @@
   margin-bottom: 0;
 
   @include font-param($font-size: 12px, $font-family: $Arial);
+  text-align: center;
 }
 
 .basic-products__show-more-button {
+  margin: 0 auto;
   margin-top: 21px;
+
+  font-size: 16px;
 }
 
 @media (min-width: $tablet-width) {
   .basic-products__list {
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: 324px 324px;
     justify-content: space-between;
 
-    margin-top: 83px;
-
-    border-top: none;
+    width: 708px;
+    margin: 0 auto;
   }
 
   .basic-products__item {
-    position: relative;
+    grid-template-areas:
+    "product-img"
+    "product-title"
+    "product-table"
+    "product-button";
 
     justify-content: center;
-
-    box-sizing: border-box;
-    width: 324px;
-
-    margin-bottom: 60px;
-    padding: 0 36px 40px 36px;
 
     background: linear-gradient(to bottom, $light-bg-color 73px, $grey-bg-color 73px);
   }
 
   .basic-products__title {
     width: 145px;
-    margin-top: 227px;
 
     font-size: 20px;
     line-height: 24px;
@@ -130,8 +132,7 @@
   }
 
   .basic-products__picture {
-    position: absolute;
-    top: 0;
+    height: 200px;
   }
 
   .basic-products__info-table {
