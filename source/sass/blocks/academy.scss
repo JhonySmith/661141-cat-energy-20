@@ -19,3 +19,9 @@
   text-decoration: none;
   color: $dark-text-color;
 }
+
+@media (min-width: $tablet-width) {
+  .academy__text-link {
+    margin-right: 25px;
+  }
+}

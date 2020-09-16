@@ -32,6 +32,10 @@
   @include font-param($font-size: 36px, $line-height: 36px);
 }
 
+.page-title--catalog {
+  margin-top: 30px;
+}
+
 .section-title {
   @include font-param($font-size: 36px, $line-height: 40px);
 }
@@ -125,6 +129,10 @@
     line-height: 60px;
   }
 
+  .page-title--catalog {
+    margin-top: 40px;
+  }
+
   .section-title {
     font-size: 60px;
     line-height: 60px;
@@ -132,6 +140,8 @@
 
   .page-button {
     width: 244px;
+    padding-top: 17px;
+    padding-bottom: 17px;
 
     font-size: 20px;
   }

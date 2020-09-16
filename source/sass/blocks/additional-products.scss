@@ -1,4 +1,5 @@
 .additional-products {
+  margin-top: 53px;
   padding-bottom: 35px;
 }
 
@@ -10,10 +11,12 @@
 
   &::after {
     content: "";
+
     position: absolute;
-    display: block;
     left: 248px;
-    top: 12px;
+    top: 13px;
+
+    display: block;
     width: 100%;
     height: 2px;
 
@@ -22,20 +25,32 @@
 }
 
 .additional-products__list {
-  list-style-type: none;
+  display: grid;
+  grid-gap: 17px;
+  margin-top: 33px;
   padding: 0;
 
   border-bottom: 1px solid $line-gray;
+
+  list-style-type: none;
 }
 
 .additional-products__item {
-  padding-bottom: 20px;
+  display: grid;
+  grid-template-areas:
+    "additional-product-title"
+    "additional-product-price"
+    "additional-products-button";
+
+  padding-top: 12px;
 
   border-top: 1px solid $line-gray;
 }
 
 .additional-products__item-title {
-  margin-top: 13px;
+  grid-area: additional-product-title;
+
+  margin: 0;
   margin-bottom: 13px;
 
   @include font-param($font-size: 16px, $line-height: 16px);
@@ -43,6 +58,8 @@
 }
 
 .additional-products__price-wraper {
+  grid-area: additional-product-price;
+
   display: flex;
   justify-content: space-between;
 
@@ -58,7 +75,9 @@
 }
 
 .additional-products__button {
-  margin-top: 15px;
+  grid-area: additional-products-button;
+
+  margin-top: 12px;
 }
 
 .additional-products__bonus {
@@ -70,8 +89,7 @@
 
   width: 280px;
   min-height: 289px;
-
-  margin-top: 39px;
+  margin-top: 57px;
   padding-top: 60px;
 
   background-color: $main-bg-color;
@@ -91,7 +109,7 @@
     width: 57px;
     height: 60px;
 
-    margin-bottom: 48px;
+    margin-bottom: 66px;
 
     background: url("../img/icon-gift.svg") no-repeat center;
   }
