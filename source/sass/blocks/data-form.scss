@@ -9,7 +9,7 @@
 
   margin: 0 auto;
 
-  padding-top: 27px;
+  padding-top: 20px;
 }
 
 .data-form__block-title {
@@ -26,7 +26,7 @@
 
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 13px;
     z-index: -1;
 
     display: block;
@@ -66,7 +66,7 @@
 }
 
 .data-form__direction {
-  margin-top: 14px;
+  margin-top: 20px;
 
   padding-top: 20px;
   padding-bottom: 9px;
@@ -133,7 +133,7 @@
     display: flex;
     align-items: center;
 
-    margin-bottom: 14px;
+    margin-bottom: 11px;
   }
 }
 
@@ -212,6 +212,10 @@
   }
 }
 
+.data-form__more-form__wraper {
+  padding-top: 25px;
+}
+
 .data-form__more-title {
   display: block;
   margin: 0 0 34px 0;
@@ -253,7 +257,7 @@
 }
 
 .data-from__submit-button {
-  margin-top: 34px;
+  margin-top: 3px;
 }
 
 .data-form__small-comment {
@@ -280,7 +284,7 @@
 
     width: 628px;
 
-    padding-top: 88px;
+    padding-top: 66px;
   }
 
   .data-form__block-title {
@@ -333,7 +337,8 @@
     width: 640px;
 
     margin: 0 auto;
-    padding: 25px 0 25px 28px;
+    margin-top: 67px;
+    padding: 25px 0 0 28px;
 
     border: 1px solid $line-gray;
   }
@@ -348,6 +353,8 @@
   }
 
   .data-form__direction-picker:checked + .data-form__direction-picker-label {
+    margin-bottom: 10px;
+
     &::after {
       left: 11px;
 
@@ -355,7 +362,6 @@
       height: 18px;
     }
   }
-
 
   .data-form__fieldset-title {
     width: 512px;

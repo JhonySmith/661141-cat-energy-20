@@ -129,6 +129,7 @@
   .additional-products {
     border-top: 2px solid $main-bg-color;
 
+    margin-top: 42px;
     padding-bottom: 76px;
   }
 
@@ -159,9 +160,11 @@
   }
 
   .additional-products__list {
-    width: 708px;
+    grid-gap: 24px;
 
+    width: 708px;
     margin-top: 0;
+    padding-bottom: 23px;
 
     border-top: 1px solid $line-gray;
     border-left: 1px solid $line-gray;
@@ -175,7 +178,7 @@
 
     padding-top: 26px;
     padding-right: 38px;
-    padding-bottom: 26px;
+    padding-bottom: 5px;
     padding-left: 38px;
   }
 
@@ -190,6 +193,8 @@
   }
 
   .additional-products__price-wraper {
+    margin-top: 3px;
+
     font-size: 16px;
   }
 
@@ -201,7 +206,9 @@
   .additional-products__button {
     width: 633px;
 
-    margin-top: 27px;
+    margin-top: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     font-size: 16px;
   }
@@ -212,7 +219,7 @@
 
     width: 708px;
     min-height: 200px;
-
+    margin-top: 70px;
     padding-top: 0;
 
 
@@ -240,15 +247,21 @@
 
 @media (min-width: $desktop-width) {
   .additional-products {
-    padding-bottom: 86px;
+    margin-top: 48px;
+    padding-bottom: 68px;
+  }
+
+  .additional-products__title {
+    left: 72px;
   }
 
   .additional-products__list {
-    box-sizing: border-box;
+    gap: 4px;
 
     width: 896px;
 
     margin-right: 0;
+    padding-bottom: 0;
 
     border-top: none;
 
@@ -293,6 +306,7 @@
 
     width: 245px;
 
+    margin-top: 40px;
     padding-bottom: 53px;
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");
